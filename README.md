@@ -69,8 +69,31 @@ It should support the following request structure:
 2. Provide filtering for movies by genres, actors and title. Use `?actors=`, `?genres=` and `?title=` parameters.
 Filtering by title with the `string` parameter should return all movies whose title contains `string`.
 
+3. Implement filtering for movie sessions by date and movie. The date should be provided in `year-month-day` format, 
+the movie by its id.
+Example:
+```
+GET /api/cinema/movie_sessions/?date=2022-12-12&movie=1
+```
+```
+HTTP 200 OK
+Allow: GET, POST, HEAD, OPTIONS
+Content-Type: application/json
+Vary: Accept
 
-3. Return taken places for movie session details endpoint
+[
+    {
+        "id": 1,
+        "show_time": "2022-12-12T12:32:00Z",
+        "movie_title": "Movie",
+        "cinema_hall_name": "Green",
+        "cinema_hall_capacity": 2829
+    }
+]
+```
+
+
+4. Return taken places for movie session details endpoint
 ```
 GET /api/cinema/movie_sessions/1/
 ```
@@ -119,7 +142,7 @@ Vary: Accept
 }
 
 ```
-4. Add `tickets_available` field to movie sessions list endpoint, 
+5. Add `tickets_available` field to movie sessions list endpoint, 
 which says about how many `tickets` are still available for each `movie_session`
 
 

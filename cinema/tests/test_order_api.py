@@ -66,8 +66,8 @@ class OrderApiTests(TestCase):
     def test_movie_session_detail_tickets(self):
         response = self.client.get(f"/api/cinema/movie_sessions/{self.movie_session.id}/")
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertEqual(response.data["tickets"][0]["row"], self.ticket.row)
-        self.assertEqual(response.data["tickets"][0]["seat"], self.ticket.seat)
+        self.assertEqual(response.data["taken_places"][0]["row"], self.ticket.row)
+        self.assertEqual(response.data["taken_places"][0]["seat"], self.ticket.seat)
 
     def test_movie_session_list_tickets_available(self):
         response = self.client.get(f"/api/cinema/movie_sessions/")

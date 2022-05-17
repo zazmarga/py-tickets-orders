@@ -6,7 +6,7 @@
 
 1. Create serializers and views to support the following endpoints:
 
-* `GET api/cinema/orders/` - should return a list of the all orders that ordered by the authenticated user.
+* `GET api/cinema/orders/` - should return a list of the all orders that filtered by the authenticated user.
 Add detail information about movie session and implement pagination.
 
 Example:
@@ -102,7 +102,7 @@ Vary: Accept
         "seats_in_row": 20,
         "capacity": 140
     },
-    "tickets": [
+    "taken_places": [
         {
             "row": 2,
             "seat": 1
@@ -119,7 +119,8 @@ Vary: Accept
 }
 
 ```
-4. Add `tickets_available` field to movie sessions list endpoint
+4. Add `tickets_available` field to movie sessions list endpoint, 
+which says about how many `tickets` are still available for each `movie_session`
 
 
 Optional tasks:

@@ -37,7 +37,7 @@ Vary: Accept
                         "show_time": "2022-12-12T12:32:00Z",
                         "movie_title": "Movie",
                         "cinema_hall_name": "Green",
-                        "cinema_hall_capacity": 140
+                        "cinema_hall_capacity": 2829
                     }
                 }
             ],
@@ -121,9 +121,9 @@ Vary: Accept
     "cinema_hall": {
         "id": 1,
         "name": "Green",
-        "rows": 14,
-        "seats_in_row": 20,
-        "capacity": 140
+        "rows": 123,
+        "seats_in_row": 23,
+        "capacity": 2829
     },
     "taken_places": [
         {

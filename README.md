@@ -1,6 +1,9 @@
 # Tickets and Orders API
 
 - Read [the guideline](https://github.com/mate-academy/py-task-guideline/blob/main/README.md) before start
+- Use the following command to load prepared data from fixture to test and debug your code:
+
+  `python manage.py loaddata cinema_servise_db_data.json`
 
 `In this task you will add the functionality of working with orders.
 

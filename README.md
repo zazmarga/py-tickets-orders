@@ -1,6 +1,6 @@
 # Tickets and Orders API
 
-- Read [the guideline](https://github.com/mate-academy/py-task-guideline/blob/main/README.md) before start
+Read [the guideline](https://github.com/mate-academy/py-task-guideline/blob/main/README.md) before starting.
 - Use the following command to load prepared data from fixture to test and debug your code:
 
   `python manage.py loaddata cinema_service_db_data.json`
@@ -155,3 +155,5 @@ which says about how many `tickets` are still available for each `movie_session`
 
 Optional tasks:
 - Provide validation for creating tickets on serializer level
+
+### Note: Check your code using this [checklist](checklist.md) before pushing your solution.
